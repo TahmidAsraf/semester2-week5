@@ -17,7 +17,7 @@ int main(void){
 	long power = 1;
 
 	int length , i;
-	
+
 	printf("Enter a hexadecimal:");
 
 	scanf ("%8s",hex);
@@ -27,7 +27,7 @@ int main(void){
 	{
 		char C = hex[i];
 		int value ;
-	}
+	
 
 
 	 if (C >= '0' && C<= '9')
@@ -35,23 +35,27 @@ int main(void){
 		value = C- '0';
 		}
 
-		else if (C>='A'&& C<'F')
+		else if (C>='A'&& C<='F')
 		{
 			value = C- 'A' +10;
 
 		}
 
 		else {
-			printf("Error: Invalid Hexadecimal\n")
+			printf("Error: Invalid Hexadecimal\n");
 			return 1;
 		}
+
+	
 
 	// if input contains invalid hex digit
 	// printf("Error: Invalid Hexadecimal\n");
 	
-	decimal = decimal =value *power;
+		decimal =decimal + value *power;
 
-	power = power *16;
+		power = power *16;
+
+	}
 	// print the decimal result
 	printf("decimal:%ld\n", decimal);
 	
