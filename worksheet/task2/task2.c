@@ -35,9 +35,20 @@ int main(void){
 		value = C- '0';
 		}
 
-		else if (C>='A'&& C<='F')
+		else if (C>='A'&& C<='F') || (C>='a'&& C<='f')
 		{
-			value = C- 'A' +10;
+			if (C>='A'&& C<='F')
+			{
+			
+				value = C- 'A' +10;
+			}
+			else 
+			{
+				value = C- 'a' +10;
+			}
+			
+			
+
 
 		}
 
