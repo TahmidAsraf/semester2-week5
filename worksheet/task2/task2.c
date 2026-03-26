@@ -35,7 +35,7 @@ int main(void){
 		value = C- '0';
 		}
 
-		else if (C>='A'&& C<='F') || (C>='a'&& C<='f')
+		else if ((C>='A'&& C<='F') || (C>='a'&& C<='f'))
 		{
 			if (C>='A'&& C<='F')
 			{
